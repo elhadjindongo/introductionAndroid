@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    tools:context=".InscriptionActivity">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Inscription"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/design_default_color_error"
+        android:textSize="30sp"
+        android:textStyle="bold|italic" />
+    <EditText
+        android:id="@+id/prenom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Prenom" />
+    <EditText
+        android:id="@+id/nom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Nom" />
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:hint="Email" />
+    <EditText
+        android:id="@+id/telephone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="phone"
+        android:hint="Telephone" />
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/femme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Femme" />
+
+        <RadioButton
+            android:id="@+id/homme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Homme" />
+    </RadioGroup>
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mois Payé"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_gravity="center_horizontal"
+        android:columnCount="3"
+        android:rowCount="4">
+
+        <CheckBox
+            android:id="@+id/janvier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Janvier" />
+
+        <CheckBox
+            android:id="@+id/fevrier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fevrier" />
+
+        <CheckBox
+            android:id="@+id/mars"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mars" />
+
+        <CheckBox
+            android:id="@+id/avril"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Avril" />
+
+        <CheckBox
+            android:id="@+id/mai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mai" />
+
+        <CheckBox
+            android:id="@+id/juin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Juin" />
+
+        <CheckBox
+            android:id="@+id/juillet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Juillet" />
+
+        <CheckBox
+            android:id="@+id/aout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aout" />
+
+        <CheckBox
+            android:id="@+id/septembre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="5dp"
+            android:text="Septembre" />
+
+        <CheckBox
+            android:id="@+id/octobre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Octobre" />
+
+        <CheckBox
+            android:id="@+id/novembre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Novembre" />
+
+        <CheckBox
+            android:id="@+id/decembre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Decenbre" />
+    </GridLayout>
+    <TextView
+        android:id="@+id/payment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Payment"
+        android:textAlignment="center"
+        android:layout_margin="15dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/design_default_color_error"
+        android:textSize="18sp"
+        android:textStyle="bold|italic" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Invalidé" />
+
+        <Switch
+            android:id="@+id/switch1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Validé" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/inscription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Inscrire"
+        android:layout_margin="25dp"
+        app:backgroundTint="@android:color/holo_blue_light" />
+    </LinearLayout>
+</ScrollView>
+
+
+</FrameLayout>
